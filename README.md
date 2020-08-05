@@ -2,7 +2,15 @@
 
 ## command
 
-### http client
+### start listen server
+
+```
+go run endpoint/http_init/main.go
+```
+
+You can choose [another endpoint](https://github.com/muroon/pprof_sample/tree/master/endpoint) without http_init.
+
+### send requests
 
 ```
 for i in `seq 1 1000`; do curl http://127.0.0.1:8080/hello; done
